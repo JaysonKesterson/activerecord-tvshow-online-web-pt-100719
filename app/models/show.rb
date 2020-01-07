@@ -20,5 +20,9 @@ class Show < ActiveRecord::Base
     Show.sum(:rating)
   end
   
-  def Show::
+  def Show::popular_shows
+    Show.all.collect do |s|
+      s.
+    end
+  end
 end
